@@ -1,0 +1,51 @@
+@import "./vars.scss";
+@media (min-width: 800px) {
+  .footer {
+    padding: 6.3125rem 0 5.18rem;
+  }
+  .footer-top {
+    flex-wrap: nowrap;
+  }
+  .footer-rightbox {
+    order: 2;
+    width: 370px;
+    text-align: right;
+  }
+
+  .footer-leftbox {
+    order: 1;
+    margin: 0;
+  }
+  .footer-title {
+    text-align: left;
+  }
+  .footer-down {
+    margin: 6.125rem 0 0;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+  .footer-btn {
+    width: 40%;
+    padding: 0.55em;
+    margin: 1.125em 0 0;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-img-group {
+    order: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-img-group {
+    order: 2;
+    justify-content: space-between;
+  }
+  .footer-menu {
+    order: 3;
+  }
+}

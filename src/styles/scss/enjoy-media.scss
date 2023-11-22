@@ -1,0 +1,64 @@
+@import "./vars.scss";
+@media (min-width: 800px) {
+  .enjoy-text {
+    margin: 114px 0 0 0;
+    width: 350px;
+  }
+
+  .enjoy-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .enjoy-img-top {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1.486fr;
+    gap: 1.25rem;
+    grid-column: 1fr;
+  }
+  .enjoy-img--1 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-1.png");
+    grid-column: 1/2;
+  }
+  .enjoy-img--2 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-2.png");
+    grid-column: 2/-1;
+  }
+  .enjoy-img--3 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-3.png");
+  }
+  .enjoy-img--4 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-4.jpg");
+  }
+  .enjoy-img--5 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-5.png");
+  }
+  .enjoy-img--6 {
+    background-color: $color-accent-2;
+    border-radius: 0 0 0 12.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $color-white;
+      font-family: $font-inter;
+      font-size: 2rem;
+      font-style: italic;
+      font-weight: 800;
+    }
+  }
+  .enjoy-img--7 {
+    background-image: url("../../../src/accets/img/enjoy/enjoy-6.png");
+    grid-column: 2/-1;
+  }
+}
+@media (min-width: 1200px) {
+  .enjoy-img-group {
+    margin: 25.65rem auto 9.5rem;
+    grid-template-rows: 21.25rem repeat(2, 16.75rem);
+    grid-template-columns: 18.75rem 28.75rem 24.43rem;
+  }
+}

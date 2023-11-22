@@ -1,0 +1,61 @@
+@import "./vars.scss";
+.texnology {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../src/accets/img/bg-tex.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.texnology-container {
+  width: 100%;
+  min-height: 100vh;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 20px;
+}
+.texnology-content {
+  margin-top: 0 auto;
+  padding: 0;
+}
+.texnology-content,
+.texnology-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: clamp(1.8rem, 3vw, 3.875em);
+  text-align: left;
+}
+.texnology-title {
+  @include text-title;
+  text-align: center;
+  color: $color-white;
+}
+.texnology-list {
+  list-style: decimal;
+  gap: clamp(0.7rem, 2vw, 0.93rem);
+  text-indent: 30px;
+  list-style-position: inside;
+}
+.texnology-item {
+  font-weight: 700;
+  color: $color-white;
+  p {
+    display: inline;
+  }
+}
+.texnology-text {
+  @include text-small;
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  font-weight: 400;
+  color: $color-white;
+}
+
+.texnology-img-group {
+  display: none;
+}

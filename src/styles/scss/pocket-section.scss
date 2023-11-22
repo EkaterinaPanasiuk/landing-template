@@ -1,0 +1,159 @@
+@import "./vars.scss";
+.pocket {
+  position: relative;
+  & > .container {
+    position: relative;
+    height: 100%;
+    margin: 4.375rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 2.5vw, 3.125rem);
+    align-items: center;
+  }
+}
+.pocket-col {
+  width: clamp(290px, 100%, 500px);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: clamp(2rem, 2vw, 3.125rem);
+  width: fit-content;
+}
+.pocket-col-1 {
+  align-items: center;
+}
+.pocket-list {
+  width: 100%;
+  min-width: 18.12rem;
+  max-width: 295px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: clamp(1rem, 1.2vw, 1.5625rem);
+}
+
+.pocket-title {
+  @include text-title;
+  color: $color-accent-2;
+  margin: 5px 0 0 0;
+}
+
+.pocket-subtitle {
+  @include text-small-bold;
+}
+.text {
+  @include text-small;
+}
+.text-accent {
+  color: $color-accent-2;
+}
+.pocket-price-item {
+  position: absolute;
+  background-image: url("../../../src/accets/img/Star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 40px;
+  left: 70vw;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.pocket-price-text {
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.9;
+}
+.pocket-btn {
+  width: clamp(290px, 50vw, 30.25rem);
+  margin: 0;
+
+  border: 2px solid $color-accent-2;
+  padding: clamp(0.5em, 1.5vw, 1.125em);
+  color: $color-accent-2;
+  font-family: $font-comforta;
+  font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+  font-weight: 700;
+  &:hover {
+    border: 2px solid $color-accent-1;
+    background-color: $color-accent-1;
+    color: $color-dark;
+  }
+}
+.pocket-col-2 {
+  width: 90%;
+  margin: 0 auto;
+  //max-width: 37.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+.pocket-img {
+  // height: 37.5em;
+  height: 100%;
+  max-height: 100vw;
+}
+.pocket-img-1 {
+  position: relative;
+  margin: 4rem 0 1.5rem;
+  margin: 2rem 0 1.5rem;
+
+  // width: 162.593px;
+  //height: 506.045px;
+  height: 70%;
+  width: auto;
+  z-index: 2;
+}
+.pocket-img-2 {
+  position: relative;
+  width: 293.752px;
+  height: 617px;
+  height: 70%;
+  width: auto;
+  margin: -0.6rem 0 -0.6rem -5rem;
+  z-index: 1;
+}
+.pocket-img-3 {
+  position: relative;
+  width: 225.322px;
+  height: 597.917px;
+  margin: 0 0 0 -3.2rem;
+  z-index: 2;
+}
+
+.pocket ::before {
+  content: "";
+  // background-image: url("../../../src/accets/img/white-tree-svg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 452px;
+  transform: translateY(100%) rotateX(-180deg);
+}
+.pocket ::after {
+  content: "";
+  //  background-image: url("../../../src/accets/img/white-tree.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 452px;
+  transform: translateY(100%) rotateX(-180deg);
+}

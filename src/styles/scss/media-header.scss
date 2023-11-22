@@ -1,0 +1,88 @@
+@import "./vars.scss";
+@media (min-width: 640px) {
+  .header-top {
+    padding: 3.75em 0;
+    @include flex-row-end-centr;
+    column-gap: 6.375em;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .header-button {
+    padding: 0.75em 0;
+    width: 12.06em;
+  }
+  .telephon {
+    @include text-medium;
+    &:hover {
+      font-size: 1.5rem;
+    }
+  }
+  .header-content {
+    width: 50%;
+    align-items: center;
+    transform-origin: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  .header::before,
+  .header::after {
+    height: 28.5rem;
+  }
+  .header::before {
+    transform: translateY(20%);
+  }
+  .header-bg-text {
+    height: 11.25rem;
+  }
+  .header-bg-text-1 {
+    font-size: 8.125rem;
+    line-height: 9.0625rem;
+  }
+  .header-bg-txt-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 33px;
+    position: absolute;
+    top: -195px;
+    left: 55.8%;
+    transform-origin: top left;
+  }
+  .header-bg-text-3 {
+    font-size: 2rem;
+  }
+  .header-bg-text-2 {
+    font-size: 8.125rem;
+    opacity: 0.3;
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+}
+
+.logo {
+}
+.button {
+}
+.header-button {
+}
+.telephon {
+}
+.header-content {
+}
+.header-title {
+}
+.header-bg-text {
+}
+.header-bg-text-1 {
+}
+.header-bg-text-item {
+}
+.header-bg-text-2 {
+}
+.header-bg-text-3 {
+}

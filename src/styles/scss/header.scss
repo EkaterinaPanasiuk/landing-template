@@ -1,0 +1,139 @@
+@import "./vars.scss";
+.header {
+  background-image: url("../../../src/accets/img/a-man-on-the-lake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header-top {
+  padding: 1.8em 0;
+  @include flex-row-end-centr;
+  flex-wrap: wrap;
+  column-gap: 6.375em;
+  row-gap: 1em;
+  a {
+    display: block;
+  }
+}
+.logo {
+  width: 10em;
+}
+.logo:hover path {
+  fill: $color-accent-2;
+}
+
+.header-button {
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  padding: 0.45em 0;
+  width: 8.06em;
+  color: var(--white, #fff);
+  font-family: $color-white;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: $color-dark;
+}
+.telephon {
+  @include text-medium;
+  &:hover {
+    font-size: 1.25rem;
+  }
+}
+.header-content {
+  width: 100%;
+  height: 100%;
+  margin: 10vh 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.25em;
+}
+.header-title {
+  position: relative;
+  z-index: 3;
+  @include text-big;
+  color: $color-white;
+  text-transform: uppercase;
+}
+.header-subtitle {
+  position: relative;
+  z-index: 3;
+  @include text-big;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.header::before,
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20.5rem;
+  transform: translateY(10%);
+  background-image: url("../../../src/accets/img/header-svg-trees.svg");
+}
+.header::after {
+  bottom: -10rem;
+  transform: translateY(40%) rotate(-180deg);
+}
+.header-bg-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+  width: 100%;
+  height: 7.5rem;
+  background-color: $color-accent-3;
+  z-index: 2;
+}
+.header-bg-text-1 {
+  width: fit-content;
+  height: auto;
+  color: $color-accent-2;
+  font-family: $font-comforta;
+  font-size: 3.5rem;
+  opacity: 0.5;
+  line-height: 6.5rem;
+  z-index: 1;
+}
+.header-bg-txt-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: -110px;
+  left: 47.8%;
+  transform-origin: top left;
+}
+.header-bg-text-2 {
+  width: fit-content;
+  height: auto;
+  color: $color-accent-2;
+  font-family: $font-comforta;
+  font-size: 3.5rem;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 48%;
+  transform: translateX(-100%);
+}
+.header-bg-text-3 {
+  color: $color-accent-2;
+  font-family: $font-inter;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  width: fit-content;
+}

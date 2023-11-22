@@ -1,0 +1,14 @@
+@import "./vars.scss";
+@media (min-width: 640px) {
+  .fantastic-top-box {
+    margin: 185px 0 80px 0;
+  }
+  .fantastic-down-box {
+    margin: 0 0 80px;
+  }
+}
+@media (min-width: 820px) {
+  .fantastic-top-col-3 {
+    display: block;
+  }
+}

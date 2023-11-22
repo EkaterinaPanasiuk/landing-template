@@ -1,0 +1,22 @@
+@import "./vars.scss";
+@media (min-width: 1100px) {
+  .pocket {
+    & > .container {
+      justify-content: space-between;
+    }
+  }
+  .pocket-col-1 {
+    align-items: flex-start;
+  }
+  .pocket-price-item {
+    top: 400px;
+    left: 286px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .pocket-price-text {
+    font-size: 35px;
+    opacity: 1;
+  }
+}
